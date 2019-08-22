@@ -1,0 +1,137 @@
+<style>
+    /* Nav Bar */
+    .navbar {
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .navbar .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .navbar .menu-bar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .navbar .gusto-logo {
+        padding: 0px;
+    }
+
+    .navbar .contact-sign-in {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .contact-sign-in p {
+        margin-bottom: 0px;
+    }
+
+    .navbar .contact-sign-in img {
+        margin-left: 18px;
+        margin-right: 50px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .navbar .btn {
+        margin: 0px;
+        background: white;
+        color: #525257 !important;
+        border: 1px solid #8AD8D8;
+    }
+
+    .navbar .btn:hover {
+        border: 1px solid #0A8080;
+        color: #0A8080 !important;
+    }
+
+    .navbar .burger-wrapper .burger,
+    .navbar .burger-wrapper .burger:after,
+    .navbar .burger-wrapper .burger:before {
+        height: 1.5px;
+        border-radius: 20px;
+        background-color: #0A8080;
+    }
+
+    .navbar .burger-wrapper.x .burger:after,
+    .navbar .burger-wrapper.x .burger:before {
+        border-radius: 0px;
+        background-color: #2f3535;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+        background-color: #ffffff;
+        height: 192px;
+        box-shadow: 0 12px 8px -8px rgba(0, 0, 0, 0.1);
+        margin-top: 8px;
+    }
+
+    .mobile-menu .container {
+        padding-top: 0px
+    }
+
+    .mobile-menu a {
+        display: block;
+        color: #0B9DAA;
+        border-top: 1px solid #EAEAEA;
+        height: 61px;
+        padding-top: 19px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .mobile-menu a div {
+        display: inline-block;
+    }
+
+    .mobile-menu a div:not(:first-child) {
+        margin-left: 5px;
+        color: #222525;
+    }
+
+    @media (max-width: 767.98px) {
+
+        /*Menu bar */
+        .menu-bar .contact-sign-in {
+            display: none;
+        }
+    }
+</style>
+
+
+<div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+    <div class="container">
+        <div class="menu-bar"><a href="#" class="w-nav-brand"><img
+                    src="https://assets.website-files.com/5d49f73f15f2c1a7a502b7a6/5d49f73f15f2c1b03602b931_Gusto%20logo_f45d48.svg"
+                    height="33" alt="" class="gusto-logo"></a>
+            <div class="flex-grow-1"></div>
+            <div class="relative">
+                <div class="contact-sign-in">
+                    <p class="text-large">Contact us: <a href="#">1-844-230-3598</a> or <a href="#">chat with us</a></p>
+                    <img src="https://assets.website-files.com/5d49f73f15f2c1a7a502b7a6/5d55dfee45d1153e70060520_GUS_001_Icons_Headset.png"
+                        width="30" height="31" alt=""><a href="https://app.gusto.com/login" class="btn w-button">Sign
+                        in</a>
+                </div>
+            </div>
+            <div id="gusto-burger" class="burger-wrapper inline-block pointer-cursor relative d-md-none">
+                <div class="burger relative"></div>
+            </div>
+        </div>
+    </div>
+    <div class="w-nav-overlay" data-wf-ignore=""></div>
+</div>
+
+<!-- <script>
+    //Add box shadow to nav on scroll. 
+    $(window).scroll(function () {
+        ($(window).scrollTop() >= 50) ? $('.navbar').addClass('on-scroll') : $('.navbar').removeClass('on-scroll')
+    });
+</script> -->
